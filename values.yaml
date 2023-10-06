@@ -1,0 +1,3 @@
+frontend:
+  image: nginx
+  url: nasa.n0b.me
