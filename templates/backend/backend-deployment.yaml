@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: {{ .Values.app.backend.image.repo }}:{{ .Values.app.backend.image.tag }}
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - secretRef:
+            name: backend-secret

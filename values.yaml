@@ -4,3 +4,8 @@ app:
       repo: justin89721/nasa-fire-frontend
       tag: abd3153ee9597c17c8848b633315e96583246502
     url: nasa.n0b.me
+  backend:
+    image:
+      repo: nginx
+      tag: lastest
+    url: api.nasa.n0b.me

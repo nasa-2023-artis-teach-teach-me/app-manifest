@@ -1,0 +1,16 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: backend-ingress-route
+spec:
+  entryPoints:
+    - web
+    - websecure
+  routes:
+  - match: Host(`{{ .Values.app.backend.url }}`)
+    kind: Rule
+    services:
+    - name: backend-svc
+      port: 80
+    middlewares:
+    - name: redirect-to-https
