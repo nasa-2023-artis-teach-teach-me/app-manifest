@@ -7,7 +7,7 @@ spec:
     - web
     - websecure
   routes:
-  - match: Host(`{{ .Values.frontend.url }}`)
+  - match: Host(`{{ .Values.app.frontend.url }}`)
     kind: Rule
     services:
     - name: frontend-svc

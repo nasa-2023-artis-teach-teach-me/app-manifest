@@ -1,3 +1,6 @@
-frontend:
-  image: wst24365888/nasa-fire-frontend:latest
-  url: nasa.n0b.me
+app:
+  frontend:
+    image:
+      repo: wst24365888/nasa-fire-frontend
+      tag: latest
+    url: nasa.n0b.me
