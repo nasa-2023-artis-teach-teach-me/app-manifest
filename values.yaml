@@ -6,6 +6,6 @@ app:
     url: nasa.n0b.me
   backend:
     image:
-      repo: nginx
-      tag: lastest
+      repo: justin89721/nasa-fire-backend
+      tag: 27cb405e0297a18b43f8057a9d79a52d93feb552
     url: api.nasa.n0b.me
