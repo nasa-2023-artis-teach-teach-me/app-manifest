@@ -2,7 +2,7 @@ app:
   frontend:
     image:
       repo: justin89721/nasa-fire-frontend
-      tag: bfff9ee02d87ae9b61702691807d520a7ef83681
+      tag: 4bb04a53b2e6445cd01cc3d42e80fb2982e93e3c
     url: nasa.n0b.me
   backend:
     image:
