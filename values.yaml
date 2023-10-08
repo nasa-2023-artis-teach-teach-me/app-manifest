@@ -7,5 +7,5 @@ app:
   backend:
     image:
       repo: justin89721/nasa-fire-backend
-      tag: e360becb5b728a7cd7053a7e78b7617a53f8ff27
+      tag: ee03e2fff341736e146ef7f7245b1ee3c1aadd3b
     url: api.nasa.n0b.me
